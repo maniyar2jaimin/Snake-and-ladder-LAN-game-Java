@@ -20,7 +20,7 @@ class Game {
 		colours = new ArrayList<String>();
 		colours.add("red"); colours.add("yellow");
 		colours.add("green"); colours.add("cyan");
-		colours.add("orange"); colours.add("blue");
+		colours.add("gray"); colours.add("blue");
 	}
 
 	boolean isOpen() {

@@ -96,7 +96,7 @@ class Client extends JFrame {
         		
         		String name = (String) listModel.get(index);
         		String colour = players.get(name);
-        		ImageIcon icon = new ImageIcon("./images/" + colour + ".jpg");
+        		ImageIcon icon = new ImageIcon("./images/" + colour + ".png");
         		Image img = icon.getImage();
         		Image scaled = img.getScaledInstance(15, 15, java.awt.Image.SCALE_SMOOTH);
         		icon = new ImageIcon(scaled);
@@ -282,8 +282,8 @@ class Client extends JFrame {
 								and set at position [x][y] on the board.
 		*/
 
-		ImageIcon i = new ImageIcon("./images/" + colour + ".jpg", 
-									"./images/" + colour + ".jpg");
+		ImageIcon i = new ImageIcon("./images/" + colour + ".png", 
+									"./images/" + colour + ".png");
 		CombineIcon icon = (CombineIcon) board[fromX][fromY].getIcon();
 		// Remove colour from this icon.
 		icon.remove(i);
@@ -307,11 +307,11 @@ class Client extends JFrame {
 			icon = new CombineIcon();
 			
 		}
-		ImageIcon i = new ImageIcon("./images/" + colour + ".jpg", 
-									"./images/" + colour + ".jpg");
+		ImageIcon i = new ImageIcon("./images/" + colour + ".png", 
+									"./images/" + colour + ".png");
 		Image img = i.getImage();
         Image scaled = img.getScaledInstance(15, 15, java.awt.Image.SCALE_SMOOTH);
-        i = new ImageIcon(scaled, "./images/" + colour + ".jpg");
+        i = new ImageIcon(scaled, "./images/" + colour + ".png");
 		icon.add(i);
 		board[x][y].setIcon(icon);
 		repaint();
